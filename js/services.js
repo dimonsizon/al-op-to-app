@@ -2,7 +2,7 @@
 
 appServices.factory('CaseService', ['$resource',
     function ($resource) {
-        return $resource('https://script.google.com/macros/s/AKfycbym-L4i30NlGXch9CBNZOqjDHhVh55dOW3E0NOj2QnU487qzc3n/exec', {}, {
+        return $resource('https://script.google.com/macros/s/AKfycbyC_30YN1rfZtrrve0WiquuIHbNBL_EGWsRca09wlkpFbSzQII/exec', {}, {
             query: { method: 'GET', isArray: false }
         });
     }
