@@ -3,7 +3,10 @@
         <nav class="col-xs-12 padding0">
             <ul class="nav nav-tabs">
                 <li class="logo pull-left">
-                    <img src="/images/logo.png" alt="INOPRINT" />
+                    <a ui-sref="home">
+                        <img src="/images/logo.png" alt="INOPRINT" />
+                    </a>
+                    
                 </li>
                 <li ng-class="{'active' : isState('home')}">
                     <a ui-sref="home">ГЛАВНАЯ</a>

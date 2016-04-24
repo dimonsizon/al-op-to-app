@@ -1,1 +1,12 @@
-﻿Home {{test}}
+﻿<div class="row">
+    <div class="col-md-12">
+        <uib-carousel interval="interval">
+            <uib-slide ng-repeat="slide in sliderImages track by $index" index="$index">
+                <img ng-src="{{slide}}" style="margin:auto;">
+                <div class="carousel-caption">
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+    
+</div>
