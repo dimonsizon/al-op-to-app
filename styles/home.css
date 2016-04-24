@@ -1,1 +1,32 @@
-﻿
+﻿.home {
+
+}
+
+    .home h1.title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+
+.about-us {
+    margin-top: 30px;
+}
+
+    .about-us .list-items {
+        margin-top: 50px;
+    }
+
+        .about-us .list-items .item {
+            text-align: center;
+            height: 150px;
+        }
+
+            .about-us .list-items .item i {
+                color: #f55d68;
+                font-size: 50px;
+            }
+
+            .about-us .list-items .item h3 {
+                text-align: center
+            }
