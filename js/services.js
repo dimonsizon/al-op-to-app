@@ -19,7 +19,7 @@ appServices.factory('DetailsServices', ['$resource',
 //отзывы
 appServices.factory('ReviewsServices', ['$resource',
     function ($resource) {
-        return $resource('https://script.google.com/macros/s/AKfycbzNkh7xSbSFOG7NitSB3uJuLxjOJGjkXXIiVwbshgr7f2AmHCo/exec', {}, {
+        return $resource('https://script.google.com/macros/s/AKfycbwQZFrR8d8p6wE6zSa3Il7rSAimWlb8TvUvtet0T1fk_xWq1CIU/exec', {}, {
             query: { method: 'GET', isArray: false }
         });
     }
