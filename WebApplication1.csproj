@@ -90,6 +90,7 @@
     <Content Include="styles\font-awesome-4.2.0\css\font-awesome.min.css" />
     <Content Include="styles\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
     <Content Include="styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="styles\home.css" />
     <Content Include="styles\media-styles.css" />
     <Content Include="styles\menu.css" />
     <Content Include="styles\product-details.css" />
@@ -148,14 +149,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
-    <Folder Include="views\products\keychain\" />
-    <Folder Include="views\products\mug\" />
-    <Folder Include="views\products\pillow\" />
-    <Folder Include="views\products\t-shirt\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="views\products\case\case-ctrl.js" />
-    <Content Include="views\products\case\case.html" />
+    <Content Include="views\products\cases\case-ctrl.js" />
+    <Content Include="views\products\cases\case.html" />
     <Content Include="views\products\product-details.html" />
     <Content Include="views\products\product-details.js" />
     <Content Include="views\modal-template\product-images-window.html" />
