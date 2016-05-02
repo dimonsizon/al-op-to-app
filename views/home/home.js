@@ -2,8 +2,9 @@
 
 angular.module('app.home', ['ngRoute'])
 
-.controller('HomeCtrl', ['$scope', '$http', '$rootScope', 'appConfig', 'NewsServices', 'ReviewsServices',
-    function ($scope, $http, $rootScope, appConfig, NewsServices, ReviewsServices) {
+.controller('HomeCtrl', ['$scope', '$http', '$rootScope', 'appConfig', 'NewsServices', 'ReviewsServices', '$filter',
+    function ($scope, $http, $rootScope, appConfig, NewsServices, ReviewsServices, $filter) {
+        $scope.currentDate = $filter('date')(new Date(), 'dd.MM.yy');
         $scope.sliderImages = [
             '/images/slider-images/1.jpg',
             '/images/slider-images/2.jpg',
