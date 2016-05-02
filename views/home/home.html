@@ -8,6 +8,7 @@
             </uib-slide>
         </uib-carousel>
     </div> 
+
     <div class="col-md-12 about-us">
         <h1 class="title">НАШИ ДОСТОИНСТВА:</h1>
         <div class="list-items row">
@@ -45,8 +46,25 @@
             </div>
         </div>
     </div>   
-    <div class="col-md-12">
 
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-9 col-sm-8" ng-if="news">
+                <h1 class="title">Последние новости</h1>
+                <div class="news-item" ng-repeat="item in news">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.text}}</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <!-- VK Widget -->
+                <div id="vk_groups" class="pull-right top20"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 0, width: "220", height: "320", color1: 'FFFFFF', color2: '333333', color3: 'f55d68'}, 87634319);
+                </script>
+            </div>
+        </div>
+        
     </div> 
     <div class="col-md-12">
 

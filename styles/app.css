@@ -210,8 +210,6 @@ i.icon {
     display: inline-block;
 }
 
-
-
 /********************Animation*********************/
 .animation-ease-in-01 {
     -webkit-transition: all 0.1s ease-in;
@@ -225,4 +223,10 @@ i.icon {
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+}
+
+/****************Footer********************/
+footer {
+    color: #fff;
+    background-color: #f55d68;
 }

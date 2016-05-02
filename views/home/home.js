@@ -2,8 +2,8 @@
 
 angular.module('app.home', ['ngRoute'])
 
-.controller('HomeCtrl', ['$scope', '$http', '$rootScope', 'appConfig',
-    function ($scope, $http, $rootScope, appConfig) {
+.controller('HomeCtrl', ['$scope', '$http', '$rootScope', 'appConfig', 'NewsServices',
+    function ($scope, $http, $rootScope, appConfig, NewsServices) {
         $scope.sliderImages = [
             '/images/slider-images/1.jpg',
             '/images/slider-images/2.jpg',
@@ -13,4 +13,8 @@ angular.module('app.home', ['ngRoute'])
             '/images/slider-images/6.jpg',
             '/images/slider-images/7.jpg'
         ];
+
+        NewsServices.get(function (data) {
+            $scope.news = data.items.reverse();
+        });
     }]);
