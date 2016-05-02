@@ -67,7 +67,7 @@
         </div>        
     </div> 
 
-    <div class="review col-md-12" ng-if="reviews">
+    <div class="reviews col-md-12" ng-if="reviews">
         <h1 class="title">ОТЗЫВЫ</h1>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-md-10 col-md-offset-1">
@@ -81,7 +81,7 @@
                         <img class="review-photo" ng-src="{{review.images}}" alt="" width="300" ng-if="review.images" />
                     </div>
                 </div>
-                <a class="btn btn-primary">ПОКАЗАТЬ БОЛЬШЕ ОТЗЫВОВ</a>
+                <a ui-sref="reviews" class="btn btn-primary">ПОКАЗАТЬ БОЛЬШЕ ОТЗЫВОВ</a>
             </div>
         </div>
     </div> 

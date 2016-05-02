@@ -149,6 +149,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
+    <Folder Include="views\contacts\" />
+    <Folder Include="views\faq\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\products\cases\case-ctrl.js" />
@@ -156,6 +158,8 @@
     <Content Include="views\products\product-details.html" />
     <Content Include="views\products\product-details.js" />
     <Content Include="views\modal-template\product-images-window.html" />
+    <Content Include="views\reviews\reviews.html" />
+    <Content Include="views\reviews\reviews.js" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
