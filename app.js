@@ -5,6 +5,7 @@ angular.module('app', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
+    'ngAnimate',
     'ngTouch',
     'ui.router',
     'ui.bootstrap.tpls',
