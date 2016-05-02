@@ -45,16 +45,17 @@
                 <h3>Огромный опыт работы</h3>
             </div>
         </div>
-    </div>   
-
-    <div class="col-md-12">
+    </div>
+    
+    <div class="col-md-12 top20">
         <div class="row">
-            <div class="col-md-9 col-sm-8" ng-if="news">
-                <h1 class="title">Последние новости</h1>
-                <div class="news-item" ng-repeat="item in news">
+            <div class="col-md-9 col-sm-8" >
+                <h1 class="title">ПОСЛЕДНИЕ НОВОСТИ</h1>
+                <div class="news-item" ng-repeat="item in news" ng-if="news">
                     <h3>{{item.title}}</h3>
                     <p>{{item.text}}</p>
                 </div>
+                <p ng-if="!news">Загрузка...</p>
             </div>
             <div class="col-md-3 col-sm-4">
                 <!-- VK Widget -->
@@ -63,9 +64,28 @@
                     VK.Widgets.Group("vk_groups", {mode: 0, width: "220", height: "320", color1: 'FFFFFF', color2: '333333', color3: 'f55d68'}, 87634319);
                 </script>
             </div>
-        </div>
-        
+        </div>        
     </div> 
+
+    <div class="review col-md-12" ng-if="reviews">
+        <h1 class="title">ОТЗЫВЫ</h1>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-md-10 col-md-offset-1">
+                <div class="review" ng-repeat="review in reviews" ng-if="$index <= 5">
+                    <div class="user-photo">
+                        <img ng-src="{{review.vkPhoto}}" alt="" width="50" />
+                    </div>
+                    <div class="review-info">
+                        <h3 class="name">{{review.userName}}</h3>
+                        <p class="text">{{review.text}}</p>
+                        <img class="review-photo" ng-src="{{review.images}}" alt="" width="300" ng-if="review.images" />
+                    </div>
+                </div>
+                <a class="btn btn-primary">ПОКАЗАТЬ БОЛЬШЕ ОТЗЫВОВ</a>
+            </div>
+        </div>
+    </div> 
+
     <div class="col-md-12">
 
     </div> 

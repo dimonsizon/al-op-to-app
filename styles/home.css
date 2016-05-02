@@ -42,3 +42,40 @@
     .news-item p {
         text-align: justify;
     }
+
+.reviews {
+    margin-bottom: 30px;
+}
+
+    .review {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+        /*.review-top {
+        
+        }*/
+            .review .user-photo {
+                margin-right: 15px;
+                width: 50px;
+                height: 50px;
+                float: left;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+
+            .review .name {
+                margin: 6px 0 4px;
+                color: #f55d68;
+            }
+
+        .review-info {
+            padding-left: 65px;
+        }
+
+            .review .text {
+
+            }
+
+            .review .review-photo {
+
+            }
