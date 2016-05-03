@@ -33,5 +33,13 @@ angular.module('app.route', ['ngRoute'])
             templateUrl: "/views/news/news.html",
             controller: 'NewsCtrl'
         })
+        .state('delivery', {
+            url: "/delivery",
+            templateUrl: "/views/delivery/delivery.html"
+        })
+        .state('contacts', {
+            url: "/contacts",
+            templateUrl: "/views/contacts/contacts.html"
+        })
     ;
 }]);

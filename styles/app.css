@@ -25,6 +25,10 @@ body {
     margin: 0 auto;
 }
 
+.main-container {
+    min-height: 800px;
+}
+
 h1, h2, h3 {
     margin-bottom: 20px;
     text-align: left;

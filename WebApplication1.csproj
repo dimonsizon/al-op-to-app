@@ -95,6 +95,7 @@
     <Content Include="styles\menu.css" />
     <Content Include="styles\product-details.css" />
     <Content Include="styles\products-list.css" />
+    <Content Include="views\contacts\contacts.html" />
     <Content Include="views\delivery\delivery.html" />
     <Content Include="views\directives-template\product-filters-template.html" />
     <Content Include="views\directives-template\product-list-template.html" />
@@ -151,7 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
-    <Folder Include="views\contacts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="views\news\news.html" />
