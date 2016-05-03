@@ -24,7 +24,8 @@ angular.module('app', [
     'app.home',
     'app.case',
     'app.productDetails',
-    'app.reviews'
+    'app.reviews',
+    'app.news'
 ]).config([
     '$stateProvider', '$urlRouterProvider', '$httpProvider',
     function ($stateProvider, $urlRouterProvider, $httpProvider) {

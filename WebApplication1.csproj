@@ -95,8 +95,10 @@
     <Content Include="styles\menu.css" />
     <Content Include="styles\product-details.css" />
     <Content Include="styles\products-list.css" />
+    <Content Include="views\delivery\delivery.html" />
     <Content Include="views\directives-template\product-filters-template.html" />
     <Content Include="views\directives-template\product-list-template.html" />
+    <Content Include="views\faq\faq.html" />
     <Content Include="views\home\home.html" />
     <Content Include="views\home\home.js" />
   </ItemGroup>
@@ -150,9 +152,10 @@
   <ItemGroup>
     <Folder Include="images\" />
     <Folder Include="views\contacts\" />
-    <Folder Include="views\faq\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="views\news\news.html" />
+    <Content Include="views\news\news.js" />
     <Content Include="views\products\cases\case-ctrl.js" />
     <Content Include="views\products\cases\case.html" />
     <Content Include="views\products\product-details.html" />

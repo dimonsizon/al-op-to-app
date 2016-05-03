@@ -14,13 +14,13 @@
                 <li ng-class="{'active' : isState('cases')}">
                     <a ui-sref="cases">ЧЕХЛЫ ДЛЯ СУБЛИМАЦИИ</a>
                 </li>
-                <li>
+                <li ng-class="{'active' : isState('delivery')}">
                     <a href="/">ДОСТАВКА</a>
                 </li>
-                <li>
-                    <a href="/">FAQ</a>
+                <li ng-class="{'active' : isState('faq')}">
+                    <a ui-sref="faq">FAQ</a>
                 </li>
-                <li>
+                <li ng-class="{'active' : isState('contacts')}">
                     <a href="/">КОНТАКТЫ</a>
                 </li>
                 <!--<li class="dropdown" ng-class="{'active' : isState('case')}">

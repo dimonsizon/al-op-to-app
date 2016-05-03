@@ -51,10 +51,11 @@
         <div class="row">
             <div class="col-md-9 col-sm-8" >
                 <h1 class="title">ПОСЛЕДНИЕ НОВОСТИ</h1>
-                <div class="news-item" ng-repeat="item in news" ng-if="news">
+                <div class="news-item" ng-repeat="item in news" ng-if="$index < 2">
                     <h3>{{item.title}}</h3>
                     <p>{{item.text}}</p>
                 </div>
+                <a ui-sref="news" class="btn btn-primary">ПОКАЗАТЬ БОЛЬШЕ НОВОСТЕЙ</a>
                 <p ng-if="!news">Загрузка...</p>
             </div>
             <div class="col-md-3 col-sm-4">
@@ -71,7 +72,7 @@
         <h1 class="title">ОТЗЫВЫ</h1>
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-md-10 col-md-offset-1">
-                <div class="review" ng-repeat="review in reviews" ng-if="$index <= 5">
+                <div class="review" ng-repeat="review in reviews" ng-if="$index < 5">
                     <div class="user-photo">
                         <img ng-src="{{review.vkPhoto}}" alt="" width="50" />
                     </div>

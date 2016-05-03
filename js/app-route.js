@@ -24,5 +24,14 @@ angular.module('app.route', ['ngRoute'])
             templateUrl: "/views/reviews/reviews.html",
             controller: 'ReviewsCtrl'
         })
+        .state('faq', {
+            url: "/faq",
+            templateUrl: "/views/faq/faq.html"            
+        })
+        .state('news', {
+            url: "/news",
+            templateUrl: "/views/news/news.html",
+            controller: 'NewsCtrl'
+        })
     ;
 }]);
