@@ -96,6 +96,7 @@
     <Content Include="styles\product-details.css" />
     <Content Include="styles\products-list.css" />
     <Content Include="views\contacts\contacts.html" />
+    <Content Include="views\contacts\contacts.js" />
     <Content Include="views\delivery\delivery.html" />
     <Content Include="views\directives-template\product-filters-template.html" />
     <Content Include="views\directives-template\product-list-template.html" />

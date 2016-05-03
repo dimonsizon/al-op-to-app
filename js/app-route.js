@@ -39,7 +39,8 @@ angular.module('app.route', ['ngRoute'])
         })
         .state('contacts', {
             url: "/contacts",
-            templateUrl: "/views/contacts/contacts.html"
+            templateUrl: "/views/contacts/contacts.html",
+            controller: 'ContactsCtrl'
         })
     ;
 }]);
