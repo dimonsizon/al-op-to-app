@@ -235,3 +235,22 @@ footer {
     color: #fff;
     background-color: #f55d68;
 }
+
+/***************************FAQ*************************/
+.faq {
+    padding-top: 25px;
+}
+
+    .faq .faq-item {
+        margin-bottom: 30px;
+    }
+
+        .faq .faq-item h3  {
+            margin: 10px 0;
+            color: #f55d68;
+            font-size: 18px;
+        }
+
+        .faq .faq-item p {
+            text-align: justify;
+        }
