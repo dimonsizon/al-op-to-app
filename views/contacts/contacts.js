@@ -16,6 +16,7 @@ angular.module('app.contacts', ['ngRoute'])
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
                 }).success(function (data) {
                     console.log(data);
+                    $scope.resultMessage = data.message;
                     //if (data.success) { //success comes from the return json object
                     //    $scope.submitButtonDisabled = true;
                     //    $scope.resultMessage = data.message;

@@ -22,12 +22,13 @@ if (isset($_POST['userName']) && isset($_POST['userEmail'])) {
 	//$mail->SetFrom($_POST['email'], 'Новый заказ');	
 	$mail->From = $_POST['userEmail'];
     $mail->FromName = 'ALOPTO';
-	$mail->AddAddress("dmitry.sizon@gmail.com", "Guest");
-	$mail->Subject    = 'ALOPTO Message';	
+	$mail->AddAddress("manager@alopto.ru", "Manager");
+	$mail->Subject    = 'ALOPTO Message (' .$_POST['userEmail']. ')';	
 	$mail->AltBody    = "To view the message, please use an HTML compatible email viewer!"; // Alt Body	
 	
 	//$mail->MsgHTML($body);
-	$mail->Body = "<p>Имя: " . $_POST['userName'] . "</p>
+	$mail->Body = "<p>Пользователь задал вопрос с формы обратной связи. Нужно ему ответить.</p>
+                    <p>Имя: " . $_POST['userName'] . "</p>
 					<p>E-mail: " . stripslashes($_POST['userEmail']) . "</p>
 					<p>Телефон: " . stripslashes($_POST['userPhone']) . "</p>
 					<p>Вконтакте: " . stripslashes($_POST['userVkUrl']) . "</p>

@@ -1,26 +1,42 @@
-﻿<div class="row">
-    <form class="order-form" ng-submit="submit(contactform)" name="contactform" method="post" role="form">
-        <div>
-            <input ng-model="formData.userName" type="text" id="name" name="name" placeholder="Ваше имя" ng-minlength=3 required />
-            <span ng-show="contactform.name.$error.minlength">Имя не может быть таким коротким</span>
-        </div>
-        <div>
-            <input ng-model="formData.userEmail" type="email" id="email" name="email" placeholder="Ваш Email" required />
-            <span ng-show="contactform.email.$error.email">Введите корректный email</span>
-        </div>
-        <div>
-            <input ng-model="formData.userPhone" type="tel" id="phone" name="phone" placeholder="Телефон" required />
-            <span ng-show="contactform.phone.$error.required && submitted">Введите корректный телефон</span>
-        </div>
-        <div>
-            <input ng-model="formData.userVkUrl" type="url" id="userVkUrl" name="userVkUrl" placeholder="Ссылка Вконтакте" />
-            <span ng-show="contactform.userVkUrl.$error.url">Введите корректный адрес</span>
-        </div>
-        <div>
-            <textarea ng-model="formData.userMessage" rows="4" id="userMessage" name="userMessage" placeholder="Подробности и пожелания"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default" ng-disabled="contactform.$invalid">
-            ОТПРАВИТЬ ЗАЯВКУ
-        </button>
-    </form>
+﻿<div class="row contacts">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>г. Таганрог</h2>
+                <p>ул. Чехова 134</p>
+                <p>Понедельник суббота 11:00-18:00, воскресенье выходной</p>
+                <p>+7 988 99-55-100</p>
+            </div>
+            <div class="col-md-5">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TSseWAHLyR8twffSilEZPipeou0DGgsf&width=350&height=300&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+            </div>            
+        </div>        
+    </div>
+    <div class="contact-form col-md-6 top20">
+        <form class="order-form" ng-submit="submit(contactform)" name="contactform" method="post" role="form">
+            <div class="form-group">
+                <input class="form-control" ng-model="formData.userName" type="text" id="name" name="name" placeholder="Ваше имя" ng-minlength=3 required />
+                <p class="text-danger" ng-show="contactform.name.$error.minlength">Имя не может быть таким коротким</p>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="formData.userEmail" type="email" id="email" name="email" placeholder="Ваш Email" required />
+                <p class="text-danger" ng-show="contactform.email.$error.email">Введите корректный email</p>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="formData.userPhone" type="tel" id="phone" name="phone" placeholder="Телефон" required />
+                <p class="text-danger" ng-show="contactform.phone.$error.required && submitted">Введите корректный телефон</p>
+            </div>
+            <div class="form-group">
+                <input class="form-control" ng-model="formData.userVkUrl" type="url" id="userVkUrl" name="userVkUrl" placeholder="Ссылка Вконтакте" />
+                <p class="text-danger" ng-show="contactform.userVkUrl.$error.url">Введите корректный адрес</p>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" ng-model="formData.userMessage" rows="4" id="userMessage" name="userMessage" placeholder="Подробности и пожелания"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" ng-disabled="contactform.$invalid">
+                ОТПРАВИТЬ ЗАЯВКУ
+            </button>
+            <p>{{resultMessage}}</p>
+        </form>
+    </div> 
 </div>
