@@ -1,3 +1,8 @@
 ﻿.contacts {
     padding-top: 25px;
 }
+
+    .contacts .contact-title {
+        margin: 30px 0 15px;
+        font-size: 18px;
+    }

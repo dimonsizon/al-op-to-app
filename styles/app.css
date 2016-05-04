@@ -254,3 +254,11 @@ footer {
         .faq .faq-item p {
             text-align: justify;
         }
+
+        .faq .faq-item.contact-us-item h3 {
+            font-size: 22px;
+        }
+
+        .faq .faq-item.contact-us-item .btn {
+            width: 300px
+        }
