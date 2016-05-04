@@ -1,5 +1,5 @@
 ﻿.home {
-
+    padding-bottom: 30px;
 }
 
     .home h1.title {
@@ -41,6 +41,10 @@
 
     .news-item p {
         text-align: justify;
+    }
+
+    .news-item .date {
+        color: #666;
     }
 
 .reviews {
@@ -85,3 +89,15 @@
     text-align: center;
     font-size: 32px;
 }
+
+.contact-us {
+
+}
+
+    .contact-us .btn {
+        margin: 0 auto;
+        padding: 15px;
+        width: 300px;
+        font-size: 20px;
+        display: block;
+    }

@@ -54,8 +54,9 @@
                 <div class="news-item" ng-repeat="item in news" ng-if="$index < 2">
                     <h3>{{item.title}}</h3>
                     <p>{{item.text}}</p>
+                    <span class="date">{{item.date | date:'dd.MM.yyyy'}}</span>
                 </div>
-                <a ui-sref="news" class="btn btn-primary">ПОКАЗАТЬ БОЛЬШЕ НОВОСТЕЙ</a>
+                <a ui-sref="news" class="btn btn-primary top10">ПОКАЗАТЬ БОЛЬШЕ НОВОСТЕЙ</a>
                 <p ng-if="!news">Загрузка...</p>
             </div>
             <div class="col-md-3 col-sm-4">
@@ -89,5 +90,10 @@
 
     <div class="col-md-12 price-download">
         <a target="_self" href="/doc/Price-List.xlsx" download="alopto-price-{{currentDate}}.xlsx"><i class="fa fa-file-excel-o"></i> Скачать прайс-лист</a>
+    </div> 
+
+    <div class="col-md-12 contact-us">
+        <h1 class="title">ХОТИТЕ ЗНАТЬ БОЛЬШЕ?</h1>
+        <a ui-sref="contacts" class="btn btn-primary"><i class="fa fa-envelope"></i> Напишите нам!</a>
     </div> 
 </div>
