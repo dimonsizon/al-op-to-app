@@ -15,9 +15,24 @@ angular.module('app.home', ['ngRoute'])
             '/images/slider-images/7.jpg'
         ];
 
-        NewsServices.get(function (data) {
+        //NewsServices.get(function (data) {
+        //    $scope.news = data.items.reverse();
+        //}).error(function (error) {
+        //    $scope.error = error;
+        //});
+
+        NewsServices.query(function (data) {
             $scope.news = data.items.reverse();
+        }, function (error) {
+            $scope.error = error;
         });
+
+        //$http.get('https://script.google.com/macros/s/AKfycbwB7-oR5Ea04z8X1dPwSYJCMQFf8EaVV60CMuP59hS6J9HWczY/exec').
+        //    success(function (data) {
+        //        $scope.news = data.items.reverse();
+        //    }).error(function (error) {
+        //        $scope.error = error;
+        //    });
 
         ReviewsServices.get(function (data) {
             $scope.reviews = data.items;

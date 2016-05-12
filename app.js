@@ -31,6 +31,14 @@ angular.module('app', [
     '$stateProvider', '$urlRouterProvider', '$httpProvider',
     function ($stateProvider, $urlRouterProvider, $httpProvider) {
         //$httpProvider.defaults.withCredentials = true;
+        //$httpProvider.defaults.useXDomain = true;
+        //delete $httpProvider.defaults.headers.common["X-Requested-With"];
+        //$httpProvider.defaults.headers.common['Content-Type'] = 'text/plain; charset=utf-8';
+        //$httpProvider.defaults.headers.common["Access-Control-Allow-Origin", "*"];
+        //$httpProvider.defaults.headers.common.Accept = 'text/plain';
+        //$httpProvider.defaults.useXDomain = true;
+        //delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
         $urlRouterProvider.otherwise("/home");
 
         /*$locationProvider.html5Mode({
@@ -42,6 +50,11 @@ angular.module('app', [
     clientUrl: ''
 }).run(['$rootScope', '$http', '$state', 'appConfig', '$location', '$sce', '$timeout', '$routeParams', '$window', '$filter',
     function ($rootScope, $http, $state, appConfig, $location, $sce, $timeout, $routeParams, $window, $filter) {
+        //$http.defaults.useXDomain = true;
+        //delete $http.defaults.headers.common['X-Requested-With'];
+        //var xhr = new XMLHttpRequest();
+        //xhr.setRequestHeader("Origin", null);
+
         $rootScope.productMainFilter = '';
         $rootScope.productFilter = '';
         $rootScope.encodeURIComponent = encodeURIComponent;

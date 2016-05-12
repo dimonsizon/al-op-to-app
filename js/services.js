@@ -28,9 +28,13 @@ appServices.factory('ReviewsServices', ['$resource',
 //news
 appServices.factory('NewsServices', ['$resource',
     function ($resource) {
-        return $resource('https://script.google.com/macros/s/AKfycbwB7-oR5Ea04z8X1dPwSYJCMQFf8EaVV60CMuP59hS6J9HWczY/exec', {}, {
-            query: { method: 'GET', isArray: false }
+        return $resource('https://script.google.com/macros/s/AKfycbwB7-oR5Ea04z8X1dPwSYJCMQFf8EaVV60CMuP59hS6J9HWczY/exec', { }, {
+            query: { method: 'GET',  isArray: false }
         });
+
+        //return $resource('https://script.google.com/macros/s/AKfycbwB7-oR5Ea04z8X1dPwSYJCMQFf8EaVV60CMuP59hS6J9HWczY/exec', { callback: 'JSON_CALLBACK' }, {
+        //    query: { method: 'JSONP', params: { callback: 'JSON_CALLBACK' }, isArray: true }
+        //});
     }
 ]);
 
